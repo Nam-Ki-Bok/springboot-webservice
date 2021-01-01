@@ -7,12 +7,12 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Getter
-@NoArgsConstructor
-@Entity
+@Getter  // 롬복의 Get 생성 어노테이션
+@NoArgsConstructor // 롬복의 기본 생성자 자동 추가 어노테이션
+@Entity  // DB의 테이블과 매칭 될 클래스임을 나타냄
 public class Posts {
-    @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Id  // 해당 테이블의 PK를 나타냄
+    @GeneratedValue (strategy = GenerationType.IDENTITY)  // PK auto_increment
     private Long id;
 
     @Column (length = 500, nullable = false)
