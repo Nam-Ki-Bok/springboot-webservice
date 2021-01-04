@@ -10,6 +10,9 @@ public class IndexController {
     public String index() {
         return "index";
     }
-}
 
-// Mustache 스타터 덕분에 src/main/resources/index.mustache 로 자동 전환
+    @GetMapping("/posts/save")
+    public String postsSave() {
+        return "posts-save";
+    }
+}
