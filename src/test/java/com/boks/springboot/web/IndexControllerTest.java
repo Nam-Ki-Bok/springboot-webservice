@@ -18,11 +18,11 @@ public class IndexControllerTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void mainPageLoadingTest() {
-        // when
-        String body = restTemplate.getForObject("/", String.class);
+    public void 메인페이지_로딩() {
+        //when
+        String body = this.restTemplate.getForObject("/", String.class);
 
-        // then
+        //then
         assertThat(body).contains("BOKS");
     }
 }

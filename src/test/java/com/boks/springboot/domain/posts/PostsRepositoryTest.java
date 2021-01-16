@@ -19,49 +19,48 @@ public class PostsRepositoryTest {
     @Autowired
     PostsRepository postsRepository;
 
-    @After  // 테스트가 끝난 뒤 수행 할 메소드 지정
-    public void cleanUp() {
+    @After
+    public void cleanup() {
         postsRepository.deleteAll();
     }
 
     @Test
-    public void findAllPosts() {
-        // given
-        String title = "TEST 제목";
-        String content = "TEST 본문";
+    public void 게시글저장_불러오기() {
+        //given
+        String title = "테스트 게시글";
+        String content = "테스트 본문";
 
         postsRepository.save(Posts.builder()
                 .title(title)
                 .content(content)
-                .author("nkb7714@gmail.com")
+                .author("jojoldu@gmail.com")
                 .build());
 
-        // when
+        //when
         List<Posts> postsList = postsRepository.findAll();
 
-        // then
+        //then
         Posts posts = postsList.get(0);
         assertThat(posts.getTitle()).isEqualTo(title);
         assertThat(posts.getContent()).isEqualTo(content);
     }
 
     @Test
-    public void BaseTimeEntityTest() {
-        // given
-        LocalDateTime now = LocalDateTime.now();
+    public void BaseTimeEntity_등록() {
+        //given
+        LocalDateTime now = LocalDateTime.of(2019, 6, 4, 0, 0, 0);
         postsRepository.save(Posts.builder()
                 .title("title")
                 .content("content")
                 .author("author")
                 .build());
-
-        // when
+        //when
         List<Posts> postsList = postsRepository.findAll();
 
-        // then
+        //then
         Posts posts = postsList.get(0);
-        System.out.println(">>>>>>>>>> CreateDate = " + posts.getCreatedDate()
-                + " ModifiedDate = " + posts.getModifiedDate());
+
+        System.out.println(">>>>>>>>> createDate=" + posts.getCreatedDate() + ", modifiedDate=" + posts.getModifiedDate());
 
         assertThat(posts.getCreatedDate()).isAfter(now);
         assertThat(posts.getModifiedDate()).isAfter(now);

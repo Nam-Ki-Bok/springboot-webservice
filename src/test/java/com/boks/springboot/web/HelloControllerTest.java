@@ -18,7 +18,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@RunWith(SpringRunner.class)  // 스프링 부트 테스트와 JUnit 사이의 연결자 역할
+@RunWith(SpringRunner.class)
 @WebMvcTest(controllers = HelloController.class,
         excludeFilters = {
                 @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, classes = SecurityConfig.class)
@@ -26,28 +26,29 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 )
 public class HelloControllerTest {
 
-    @Autowired  // 스프링이 관리하는 bean을 주입
-    private MockMvc mvc;  // 웹 API를 테스트 하는 경우 사용, 테스트의 시작점
+    @Autowired
+    private MockMvc mvc;
 
-    @Test
     @WithMockUser(roles = "USER")
-    public void returnHello() throws Exception {
+    @Test
+    public void hello가_리턴된다() throws Exception {
         String hello = "hello";
 
-        mvc.perform(get("/hello"))  // MockMvc를 통해 /hello 주소로 GET 요청
-                .andExpect(status().isOk())  // 이 요청의 상태를 검증, 이 경우 OK 즉 200 인지 확인
-                .andExpect(content().string(hello));  // GET을 통해 받은 값이 hello 인지 확인
+        mvc.perform(get("/hello"))
+                .andExpect(status().isOk())
+                .andExpect(content().string(hello));
     }
 
-    @Test
     @WithMockUser(roles = "USER")
-    public void returnHelloDto() throws Exception {
-        String name = "test";
-        int amount = 100;
+    @Test
+    public void helloDto가_리턴된다() throws Exception {
+        String name = "hello";
+        int amount = 1000;
 
-        mvc.perform(get("/hello/dto")
-                .param("name", name)
-                .param("amount", String.valueOf(amount)))
+        mvc.perform(
+                get("/hello/dto")
+                        .param("name", name)
+                        .param("amount", String.valueOf(amount)))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.name", is(name)))
                 .andExpect(jsonPath("$.amount", is(amount)));
