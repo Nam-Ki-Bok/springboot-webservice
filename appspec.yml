@@ -11,6 +11,7 @@ permissions:
     owner: ec2-user
     group: ec2-user
 
+# LifecycleEvent - ApplicationStart 으로 하지 않아 오류가 발생했는데 다시 된다..
 hooks:
   ApplicationStart:
     - location: deploy.sh

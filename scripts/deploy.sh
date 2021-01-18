@@ -9,7 +9,9 @@ cp $REPOSITORY/zip/*.jar $REPOSITORY/
 
 echo "> 현재 구동중인 애플리케이션 pid 확인"
 
+# 이 코드는 실행중인 스프링부트 프로젝트를 찾지 못하였음
 #CURRENT_PID=$(pgrep -fl $PROJECT_NAME | grep jar | awk '{print $1}')
+
 CURRENT_PID=$(pgrep -f ${PROJECT_NAME}.*.jar)
 
 echo "현재 구동중인 어플리케이션 pid: $CURRENT_PID"
