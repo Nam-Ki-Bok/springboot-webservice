@@ -31,7 +31,6 @@ var main = {
             window.location.href = '/';
         }).fail(function (error) {
             alert('GUEST는 글을 작성할 수 없습니다. 관리자에게 문의하세요.');
-            alert(JSON.stringify(error));
         });
     },
     update : function () {
