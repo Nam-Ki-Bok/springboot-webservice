@@ -3,20 +3,19 @@
     <h1 class="index-title" style="margin: 20px 0 20px 0">BOKS - 스프링 부트와 AWS로 혼자 구현하는 웹 서비스</h1>
 
     <!-- 로그인 기능 영역 -->
-    <div class="row">
-        <div class="col-md-6" style="margin-bottom: 50px">
-            {{#userName}}
-                <span id="user">{{userName}}</span>
-            {{/userName}}
-            {{^userName}}
-                <a href="/oauth2/authorization/google" class="btn btn-secondary active google" role="button">구글 로그인</a>
-                <a href="/oauth2/authorization/naver" class="btn btn-success active naver" role="button">네이버 로그인</a>
-            {{/userName}}
-            <a href="/posts/save" role="button" class="btn btn-primary posting">글 등록</a>
-            {{#userName}}
-                <a href="/logout" class="btn btn-info active logout" role="button">로그아웃</a>
-            {{/userName}}
-        </div>
+    <div align="center" style="margin-bottom: 50px;">
+        {{#userName}}
+            <span id="user">{{userName}}</span>
+        {{/userName}}
+        {{^userName}}
+            <a align="center" href="/oauth2/authorization/google" class="btn btn-secondary active google" role="button">구글
+                로그인</a>
+            <a href="/oauth2/authorization/naver" class="btn btn-success active naver" role="button">네이버 로그인</a>
+        {{/userName}}
+        <a href="/posts/save" role="button" class="btn btn-primary posting">글 등록</a>
+        {{#userName}}
+            <a href="/logout" class="btn btn-info active logout" role="button">로그아웃</a>
+        {{/userName}}
     </div>
 
     <!-- 목록 출력 영역 -->
