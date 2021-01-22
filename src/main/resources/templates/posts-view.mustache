@@ -21,9 +21,10 @@
         </div>
     </form>
 
-    <!-- 내가 쓴 글인지 아닌지 확인해서 버튼 보여줘야 함 참이면 출력 -->
+    <!-- 내가 쓴 글인지 아닌지 확인해서 버튼 보여줘야 함 -->
     {{#checkMyPost}}
-        <button type="button" class="btn btn-primary" id="btn-update">수정</button>
+        <a href="/posts/update/{{post.id}}" role="button" class="btn btn-primary">수정</a>
+<!--        <button type="button" class="btn btn-primary" id="btn-update">수정</button>-->
         <button type="button" class="btn btn-danger" id="btn-delete">삭제</button>
     {{/checkMyPost}}
     <a href="/" role="button" class="btn btn-secondary">뒤로가기</a>
