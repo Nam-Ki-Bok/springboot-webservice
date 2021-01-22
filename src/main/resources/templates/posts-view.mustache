@@ -1,5 +1,5 @@
 {{>layout/header}}
-<h1 class="update-title">게시글</h1>
+<h1 class="view-title">게시글</h1>
 
 <div class="container">
     <form>
@@ -24,10 +24,8 @@
     <!-- 내가 쓴 글인지 아닌지 확인해서 버튼 보여줘야 함 -->
     {{#checkMyPost}}
         <a href="/posts/update/{{post.id}}" role="button" class="btn btn-primary">수정</a>
-<!--        <button type="button" class="btn btn-primary" id="btn-update">수정</button>-->
         <button type="button" class="btn btn-danger" id="btn-delete">삭제</button>
     {{/checkMyPost}}
     <a href="/" role="button" class="btn btn-secondary">뒤로가기</a>
 </div>
-
 {{>layout/footer}}

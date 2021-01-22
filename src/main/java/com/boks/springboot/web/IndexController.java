@@ -4,7 +4,6 @@ import com.boks.springboot.config.auth.LoginUser;
 import com.boks.springboot.config.auth.dto.SessionUser;
 import com.boks.springboot.service.posts.PostsService;
 import com.boks.springboot.web.dto.PostsResponseDto;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -37,16 +36,19 @@ public class IndexController {
     public String postsView(@PathVariable Long id, Model model, @LoginUser SessionUser user) {
         PostsResponseDto dto = postsService.findById(id);
 
-        if (dto.getAuthor().equals(user.getName())) {
-            model.addAttribute("checkMyPost", true);
+        if (user != null) {
+            if (dto.getAuthor().equals(user.getName())) {
+                model.addAttribute("checkMyPost", true);
+            }
+            else {
+                model.addAttribute("checkMyPost", false);
+            }
         }
-
         else {
             model.addAttribute("checkMyPost", false);
         }
 
         model.addAttribute("post", dto);
-
         return "posts-view";
     }
 
