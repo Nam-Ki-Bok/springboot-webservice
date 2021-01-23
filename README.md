@@ -16,7 +16,7 @@
 
 ### Back-end
 
-&nbsp;&nbsp;&nbsp;&nbsp;**Spring boot, Spring Security, Spring Data JPA**
+​	**Spring boot, Spring Security, Spring Data JPA**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/54533309/105580728-66d95800-5dd1-11eb-8d5c-3d0c254ed9f3.png" alt="image" width="130">
 
@@ -26,7 +26,7 @@
 
 ### Deploy with AWS
 
-​	**Code Deploy**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**EC2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**S3**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**RDS**
+​	**Code Deploy**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**EC2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**S3**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**RDS**
 
 ​	&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/54533309/105578520-3c34d280-5dc4-11eb-9cb1-716b0a766908.png" alt="AWS-CodeDeploy_dark-bg@4x" width="60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/54533309/105578501-00017200-5dc4-11eb-8a40-ccb38fb14815.png" alt="Amazon-EC2_dark-bg@4x" width="60"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/54533309/105578510-1c9daa00-5dc4-11eb-9602-824c085953d2.png" alt="Amazon-Simple-Storage-Service-S3_dark-bg@4x" width="60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/54533309/105578700-5622e500-5dc5-11eb-98dc-ca596399b1d9.png" alt="Amazon-RDS_MariaDB_instance_dark-bg@4x" width="60">
 
