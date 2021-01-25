@@ -7,7 +7,9 @@
 📌 **[2021.01.25] Version Upgrade**
 
 > Spring Boot 2.1.9 -> Spring Boot 2.4.1
+>
 > Gradle 4.10.2 -> Gradle 6.7.1
+>
 > Junit4 -> unit5
 
 ![화면 기록 2021-01-23 오후 8 22 40](https://user-images.githubusercontent.com/54533309/105577474-3b4c7280-5dbd-11eb-9509-963f6180f2a2.gif)
