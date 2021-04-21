@@ -73,7 +73,39 @@ public class PostsApiController {
 
 ## 📚 개발 과정
 
-#### <a href="https://nam-ki-bok.github.io/categories/Spring/" style="color:#0FA678;" target="_blank">nam-ki-bok.github.io/categories/Spring</a>
+<a href="https://nam-ki-bok.github.io/spring/GradleError/" style="color:#0FA678">[springboot-webserivce] Gradle - No candidates found for method call plugins 오류 해결</a>
+
+<a href="https://nam-ki-bok.github.io/spring/GetTest/" style="color:#0FA678">[springboot-webserivce] GET API test 코드 작성</a>
+
+<a href="https://nam-ki-bok.github.io/spring/InitSpring/" style="color:#0FA678">[springboot-webserivce] 스프링 부트 개발환경 구축</a>
+
+<a href="https://nam-ki-bok.github.io/spring/DTOTest/" style="color:#0FA678">[springboot-webserivce] 롬복을 이용한 DTO 생성과 테스트</a>
+
+<a href="https://nam-ki-bok.github.io/spring/JPA/" style="color:#0FA678">[springboot-webserivce] Spring Data JPA 적용과 테스트</a>
+
+<a href="https://nam-ki-bok.github.io/spring/PostAPI/" style="color:#0FA678">[springboot-webserivce] Post 등록 API 생성 및 분석과 테스트</a>
+
+<a href="https://nam-ki-bok.github.io/spring/PostUpdate/" style="color:#0FA678">[springboot-webserivce] Post 수정/조회 API 생성 및 분석과 테스트</a>
+
+<a href="https://nam-ki-bok.github.io/spring/Auditing/" style="color:#0FA678">[springboot-webserivce] JPA Auditing을 통한 생성/수정 시간 자동화</a>
+
+<a href="https://nam-ki-bok.github.io/spring/Mustache/" style="color:#0FA678">[springboot-webserivce] 머스테치로 기본 페이지, 글 등록 페이지 제작</a>
+
+<a href="https://nam-ki-bok.github.io/spring/Devtools/" style="color:#0FA678">[springboot-webserivce] 스프링 부트에서 정적 요소 변경 자동 반영 하기</a>
+
+<a href="https://nam-ki-bok.github.io/spring/AllSearch/" style="color:#0FA678">[springboot-webserivce] 전체 Post 조회 화면 만들기</a>
+
+<a href="https://nam-ki-bok.github.io/spring/PostDelete/" style="color:#0FA678">[springboot-webserivce] Post 수정 / 삭제 화면 만들기</a>
+
+<a href="https://nam-ki-bok.github.io/spring/AWS/" style="color:#0FA678">[springboot-webserivce] AWS EC2 서버환경구축</a>
+
+<a href="https://nam-ki-bok.github.io/spring/1RDS/" style="color:#0FA678">[springboot-webserivce] AWS RDS 환경구축</a>
+
+<a href="https://nam-ki-bok.github.io/spring/2Deploy/" style="color:#0FA678">[springboot-webserivce] EC2 서버 프로젝트 배포</a>
+
+<a href="https://nam-ki-bok.github.io/spring/3DBConnect/" style="color:#0FA678">[springboot-webserivce] 프로젝트와 RDS 연결</a>
+
+<a href="https://nam-ki-bok.github.io/spring/TravisCI/" style="color:#0FA678">[springboot-webserivce] Travis CI, S3, CodeDeploy 를 통한 배포 자동화</a>
 
 ## ❗️이슈
 
